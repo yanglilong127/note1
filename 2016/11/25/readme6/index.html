@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="流行框架第六天：电影列表检索案例step-01 构建项目结构
+克隆项目骨架
+
+12$ git clone --depth=1 https://github.com/Micua/angular-boilerplate.git moviecat$ cd moviecat
+
+安装项目依赖
+
+1$ bower install bootstrap --save
+12.editorconfig -- 统一不同">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2016/11/25/readme6/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="流行框架第六天：电影列表检索案例step-01 构建项目结构
+克隆项目骨架
+
+12$ git clone --depth=1 https://github.com/Micua/angular-boilerplate.git moviecat$ cd moviecat
+
+安装项目依赖
+
+1$ bower install bootstrap --save
+12.editorconfig -- 统一不同">
+<meta property="og:updated_time" content="2016-11-25T01:27:56.258Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="流行框架第六天：电影列表检索案例step-01 构建项目结构
+克隆项目骨架
+
+12$ git clone --depth=1 https://github.com/Micua/angular-boilerplate.git moviecat$ cd moviecat
+
+安装项目依赖
+
+1$ bower install bootstrap --save
+12.editorconfig -- 统一不同">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-readme6" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/11/25/readme6/" class="article-date">
+  <time datetime="2016-11-25T01:27:50.524Z" itemprop="datePublished">2016-11-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="流行框架第六天：电影列表检索案例"><a href="#流行框架第六天：电影列表检索案例" class="headerlink" title="流行框架第六天：电影列表检索案例"></a>流行框架第六天：电影列表检索案例</h1><h2 id="step-01-构建项目结构"><a href="#step-01-构建项目结构" class="headerlink" title="step-01 构建项目结构"></a>step-01 构建项目结构</h2><ul>
+<li>克隆项目骨架</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> --depth=1 https://github.com/Micua/angular-boilerplate.git moviecat</div><div class="line">$ <span class="built_in">cd</span> moviecat</div></pre></td></tr></table></figure>
+<ul>
+<li>安装项目依赖</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ bower install bootstrap --save</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.editorconfig -- 统一不同开发者的不同开发工具的不同开发配置</div><div class="line">在Sublime中使用需要安装一个EditorConfig的插件</div></pre></td></tr></table></figure>
+<ul>
+<li>为NG做一个项目骨架的目的是为了快速开始一个新的项目</li>
+<li>angular-seed</li>
+</ul>
+<p>npm 在 package.json中的script节点中可以定义脚本任务，</p>
+<p>API的概念：<br>Application Programxxx Interface<br>应用程序编程接口</p>
+<p>有哪些常见的API</p>
+<p>WebAPI 通过WEB方式提供结构叫做 WEBAPI</p>
+<p>Math.random() – api?</p>
+<p>所有有输入有输出的事物都可以是API<br>都是函数</p>
+<p>测试WebAPI的工具： POSTMAN</p>
+<h2 id="step-02-抽象数据成员，以假数据的方式设计控制器和视图"><a href="#step-02-抽象数据成员，以假数据的方式设计控制器和视图" class="headerlink" title="step-02 抽象数据成员，以假数据的方式设计控制器和视图"></a>step-02 抽象数据成员，以假数据的方式设计控制器和视图</h2><h2 id="step-03-图片链接数据绑定BUG"><a href="#step-03-图片链接数据绑定BUG" class="headerlink" title="step-03 图片链接数据绑定BUG"></a>step-03 图片链接数据绑定BUG</h2><h2 id="step-04-豆瓣API介绍，加入-http服务对象完成AJAX请求数据"><a href="#step-04-豆瓣API介绍，加入-http服务对象完成AJAX请求数据" class="headerlink" title="step-04 豆瓣API介绍，加入$http服务对象完成AJAX请求数据"></a>step-04 豆瓣API介绍，加入$http服务对象完成AJAX请求数据</h2><h2 id="step-05-加载提示，Loading状态设计"><a href="#step-05-加载提示，Loading状态设计" class="headerlink" title="step-05 加载提示，Loading状态设计"></a>step-05 加载提示，Loading状态设计</h2><h2 id="step-06-修改字符数组的展示形式"><a href="#step-06-修改字符数组的展示形式" class="headerlink" title="step-06 修改字符数组的展示形式"></a>step-06 修改字符数组的展示形式</h2><h2 id="step-07-实现分页功能"><a href="#step-07-实现分页功能" class="headerlink" title="step-07 实现分页功能"></a>step-07 实现分页功能</h2><h2 id="step-07-抽象公共的列表页"><a href="#step-07-抽象公共的列表页" class="headerlink" title="step-07 抽象公共的列表页"></a>step-07 抽象公共的列表页</h2><h2 id="step-08-搜索功能模块"><a href="#step-08-搜索功能模块" class="headerlink" title="step-08 搜索功能模块"></a>step-08 搜索功能模块</h2><h2 id="step-09-详细页模块设计展示"><a href="#step-09-详细页模块设计展示" class="headerlink" title="step-09 详细页模块设计展示"></a>step-09 详细页模块设计展示</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/11/25/readme6/" data-id="civx418lc0002tg7ei812pwum" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/11/25/readme7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/25/readme5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/11/25/github托管页面/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/25/readme7/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/25/readme6/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/25/readme5/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/11/25/readme4/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
