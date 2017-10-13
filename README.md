@@ -1,5 +1,5 @@
 # note1
-##hexo官网：https://hexo.io快速建立博客框架
+## hexo官网：https://hexo.io快速建立博客框架
 1. npm install -g hexo-cli
 2. hexo init blog
 3. cd blog
